@@ -22,3 +22,8 @@ start playing
 
 in another terminal
 cansend vcan0 01a#11223344AABBCCDD
+
+generate random messages to our can bus<br/>
+cangen vcan0 -v<br/>
+
+let's record our reading
