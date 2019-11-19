@@ -35,5 +35,13 @@ generate random messages to our can bus<br/>
 cangen vcan0 -v<br/>
 
 let's record our reading
+candump -l vcan0<br/>
+
+read our file in friendly format<br/>
+log2asc -I candump-2015-03-20_123001.log vcan0<br/>
+
+play our file on the bus<br/>
+log2asc -I candump-2015-03-20_123001.log vcan0<br/>
+
 
 [for the full tutorial](https://sgframework.readthedocs.io/en/latest/cantutorial.html) <br/>
