@@ -21,16 +21,16 @@ in another terminal<br/>
 
 
 generate random messages to our can bus<br/>
-cangen vcan0 -v<br/>
+`cangen vcan0 -v`<br/>
 
 let's record our reading<br/>
-candump -l vcan0<br/>
+`candump -l vcan0`<br/>
 
 read our file in friendly format<br/>
-log2asc -I candump-2019-11-20_202023.log vcan0<br/>
+`log2asc -I candump-2019-11-20_202023.log vcan0`<br/>
 
 play our file on the bus<br/>
-canplayer -I candump-2019-11-20_202023.log<br/>
+`canplayer -I candump-2019-11-20_202023.log`<br/>
 
 
 [for the full tutorial](https://sgframework.readthedocs.io/en/latest/cantutorial.html) <br/>
