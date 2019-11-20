@@ -38,10 +38,10 @@ let's record our reading
 candump -l vcan0<br/>
 
 read our file in friendly format<br/>
-log2asc -I candump-2015-03-20_123001.log vcan0<br/>
+log2asc -I candump-2019-11-20_202023.log vcan0<br/>
 
 play our file on the bus<br/>
-log2asc -I candump-2015-03-20_123001.log vcan0<br/>
+lcanplayer -I candump-2019-11-20_202023.log<br/>
 
 
 [for the full tutorial](https://sgframework.readthedocs.io/en/latest/cantutorial.html) <br/>
