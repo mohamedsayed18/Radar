@@ -19,10 +19,6 @@ Start playing<br/>
 in another terminal<br/>
 `cansend vcan0 01a#11223344AABBCCDD`<br/>
 
-test by making virtual can bus
-`modprobe vcan`
-`sudo ip link add dev vcan0 type vcan`
-`sudo ip link set up vcan0`
 
 
 start playing
