@@ -21,16 +21,16 @@ in another terminal<br/>
 
 
 
-start playing
- candump vcan0
+start playing<br/>
+ candump vcan0<br/>
 
-in another terminal
-cansend vcan0 01a#11223344AABBCCDD
+in another terminal<br/>
+cansend vcan0 01a#11223344AABBCCDD<br/>
 
 generate random messages to our can bus<br/>
 cangen vcan0 -v<br/>
 
-let's record our reading
+let's record our reading<br/>
 candump -l vcan0<br/>
 
 read our file in friendly format<br/>
