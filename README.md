@@ -30,7 +30,7 @@ read our file in friendly format<br/>
 log2asc -I candump-2019-11-20_202023.log vcan0<br/>
 
 play our file on the bus<br/>
-lcanplayer -I candump-2019-11-20_202023.log<br/>
+canplayer -I candump-2019-11-20_202023.log<br/>
 
 
 [for the full tutorial](https://sgframework.readthedocs.io/en/latest/cantutorial.html) <br/>
