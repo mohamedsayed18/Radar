@@ -34,3 +34,8 @@ play our file on the bus<br/>
 
 
 [for the full tutorial](https://sgframework.readthedocs.io/en/latest/cantutorial.html) <br/>
+
+#### [Kalman filters](http://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf)
+we did a 2D kalman filter for estimating the position and velocity of the obstacle<br/>
+
+[Apollo](https://github.com/ApolloAuto/apollo)<br/>
