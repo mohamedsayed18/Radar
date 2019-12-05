@@ -47,7 +47,7 @@ for i in range(len(position)):
     k = pk.dot(H.transpose()) / (H.dot(pk).dot(H.transpose()) + R)
     # fourth step
     # new measurement value
-    new_measure = C.dot(np.array([[position[i]],[0.5*delta_t*acceleration[i]]]))
+    new_measure = C.dot(np.array([[position[i]],[velocity[i]]]))
     # fifth step
     #calculate the new state
     # assign it to initial state to be able to use it in the new iteration
