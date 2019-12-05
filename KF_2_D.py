@@ -1,10 +1,7 @@
 import pandas as pd
 import numpy as np
 import scarp_log
-data = pd.read_csv("GPS.csv")
-data_2=pd.read_csv("Accelerometer.csv")
-position=data["Longitude"]
-acceleration=data_2["X"]
+
 
 
 
