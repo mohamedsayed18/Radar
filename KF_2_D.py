@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import scarp_log
 data = pd.read_csv("GPS.csv")
 data_2=pd.read_csv("Accelerometer.csv")
 position=data["Longitude"]
@@ -28,11 +29,11 @@ A=np.array([[1, delta_t],
 
 #inital/previous state matrix X
 init_state=np.array([[position[0]],
-            [0.5*delta_t*acceleration[0]]])
+            [velocity[0]]])
 
 #input transmission matrix
-B = np.array([[0.5 * delta_t**2],
-                [delta_t]])
+B = np.array([[delta_t],
+                [1]])
 
 #initial/previous process covariance matrix
 Pk=np.array([[pos_error**2, 0],
@@ -40,7 +41,7 @@ Pk=np.array([[pos_error**2, 0],
 
 for i in range(len(position)):
     # first step detrmine the current state
-    current_state = A.dot(init_state) + B.dot(acceleration[i])
+    current_state = A.dot(init_state) + B.dot(velocity[i])
     # second step
     # predict the process covariance matrix
     pk = np.dot(A.dot(Pk), A.transpose())
